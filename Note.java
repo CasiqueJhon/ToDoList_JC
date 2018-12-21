@@ -45,10 +45,6 @@ public class Note {
         return jo;
     }
 
-
-
-
-
     public String getTitle() {
         return mTitle;
     }
@@ -88,4 +84,5 @@ public class Note {
     public void setImportant(boolean important) {
         mImportant = important;
     }
+
 }
