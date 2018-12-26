@@ -8,7 +8,8 @@ import android.widget.CompoundButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
-public class SettingsActivity extends AppCompatActivity {
+public class
+SettingsActivity extends AppCompatActivity {
 
     private SharedPreferences mPrefs;
     private SharedPreferences.Editor mEditor;
