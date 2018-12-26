@@ -107,7 +107,7 @@ public class SettingsActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
-        //Aplly all the settings when the user change the activity.
+        //Apply all the settings when the user change the activity.
         mEditor.apply();
     }
 }
