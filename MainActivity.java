@@ -142,10 +142,5 @@ public class MainActivity extends AppCompatActivity {
             mNoteList.add(note);
             notifyDataSetChanged();
         }
-
     }
-
-
-
-
 }

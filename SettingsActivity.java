@@ -98,7 +98,6 @@ SettingsActivity extends AppCompatActivity {
                             }
                             //Make the changes into the hard drive
                             mEditor.putInt("anim_option", animationOption);
-                            //Apply changes in onPause method
                         }
                     }
                 }

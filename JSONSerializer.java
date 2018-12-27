@@ -88,5 +88,5 @@ public class JSONSerializer {
         }
         return notes;
     }
-    
+
 }
