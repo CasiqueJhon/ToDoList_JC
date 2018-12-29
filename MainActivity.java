@@ -88,6 +88,25 @@ public class MainActivity extends AppCompatActivity {
 
 
         List<Note> mNoteList = new ArrayList<>();
+        private JSONSerializer mJSONSerializer;
+
+        public NoteAdapter () {
+            mJSONSerializer = new JSONSerializer("ToDoList.json" , MainActivity.this.getApplicationContext());
+
+            try {
+                mJSONSerializer.load();
+            }catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+
+        public void saveNotes() {
+            try {
+                mJSONSerializer.saved(mNoteList);
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+        }
 
 
         @Override
