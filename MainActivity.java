@@ -47,6 +47,16 @@ public class MainActivity extends AppCompatActivity {
                 dialog.show(getFragmentManager(), "show_note");
             }
         });
+
+        listView.setLongClickable(true);
+
+      listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+          @Override
+          public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+              mNoteAdapter.delecteNote(position);
+              return false;
+          }
+      });
     }
 
     @Override
@@ -159,6 +169,11 @@ public class MainActivity extends AppCompatActivity {
 
         public void addNote(Note note) {
             mNoteList.add(note);
+            notifyDataSetChanged();
+        }
+
+        public void delecteNote(int n) {
+            mNoteList.remove(n);
             notifyDataSetChanged();
         }
     }
